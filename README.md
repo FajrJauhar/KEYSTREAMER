@@ -1,55 +1,24 @@
-# KEYSTREAMER
-Keystream is a lightweight, Python-based tool that captures and streams keyboard input to a Command-and-Control (C2) server. Designed for educational purposes, this project demonstrates how keystrokes can be intercepted and sent over the network for further analysis.
+# Inputs To Mail
+Get Keyboard, Mouse, ScreenShot, Microphone Inputs and Send to your Mail.  
+Purpose of the project is testing the security of information systems.
 
-Disclaimer: This project is intended for ethical hacking and educational use only. Misuse of this tool for unauthorized surveillance or activities is strictly prohibited.
+## INSTALLATION
 
-Features
-Captures keyboard inputs including standard and special keys (e.g., Shift, Enter, Alt, etc.).
-Streams captured keystrokes to a C2 server in real-time.
-Implements error handling for smooth operation.
-Supports cross-platform use (Windows/Linux/macOS).
-Installation
-Clone the repository to your local machine:
+**You don't need to do anything for installation. Just run the executable.**  
+After obfuscating the code using **pyarmor-7** and packaging it into a .exe file with **pyinstaller**, the tool will be ready to run. The executable will run in the background when clicked, disguised with a fake application icon.
 
-bash
-Copy code
-git clone https://github.com/yourusername/Keystream.git
-cd Keystream
-Install the required dependencies:
+![github-small](/images/Adsız.png)
 
-bash
-Copy code
+## USAGE
+
+• **Create an account on "https://mailtrap.io/" using a temporary email.**
+
+![github-small](https://github.com/aydinnyunus/WifiPassword-Stealer/blob/master/images/dene.png?raw=true)
+
+• **Set your own SMTP USERNAME and SMTP PASSWORD in the "keylogger.py" script.**
+
+• **Install required dependencies**:
+
+```bash
 pip install -r requirements.txt
-Configure the C2 server:
 
-Open keystream.py and modify the c2_server_url variable to match your server's address where the keystroke data will be sent.
-
-Run the tool:
-
-bash
-Copy code
-python keystream.py
-The program will begin capturing keystrokes and sending the data to your C2 server.
-
-Usage
-When the program is running, it will capture and log keystrokes, including special keys like:
-
-Space ([SPACE])
-Enter ([ENTER])
-Tab ([TAB])
-Backspace ([BACKSPACE])
-Shift ([SHIFT])
-Alt ([ALT])
-Escape ([ESC])
-The captured keystrokes will be sent to the server in the following JSON format:
-
-json
-Copy code
-{
-  "log": "[SPACE]"
-}
-Ethical Use Disclaimer
-This tool is for educational use only. Unauthorized interception of keystrokes or access to computer systems is illegal. Always obtain explicit permission before using this tool.
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
